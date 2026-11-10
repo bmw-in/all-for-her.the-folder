@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f2ed">
+<meta name="description" content="A little collection of pages, memories and messages made just for you.">
+<title>A Little Place for You</title>
+<style>
+:root{--paper:#f8f2ed;--card:rgba(255,252,249,.84);--ink:#554441;--muted:#927d77;--rose:#b77f83;--line:rgba(126,91,88,.17)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;color:var(--ink);background:radial-gradient(ellipse at 10% 8%,rgba(222,183,179,.25),transparent 34rem),radial-gradient(ellipse at 90% 90%,rgba(232,207,190,.27),transparent 34rem),var(--paper);font-family:Georgia,"Times New Roman",serif;-webkit-font-smoothing:antialiased}
+body:before{content:"";position:fixed;inset:0;z-index:4;pointer-events:none;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E")}
+.shell{width:min(100% - 34px,790px);margin:auto;padding:62px 0 42px}
+.eyebrow{display:flex;justify-content:center;align-items:center;gap:12px;color:var(--muted);font:10px/1.4 Arial,sans-serif;letter-spacing:.23em;text-transform:uppercase;animation:rise .7s both}
+.eyebrow:before,.eyebrow:after{content:"";width:29px;height:1px;background:#c9aaa5}
+header{text-align:center;padding:27px 0 31px;animation:rise .8s .08s both}
+h1{margin:0;color:#674f4c;font-size:clamp(42px,8vw,66px);line-height:1.08;font-weight:400;letter-spacing:-.045em}
+.intro{max-width:430px;margin:15px auto 0;color:var(--muted);font-size:15px;line-height:1.8}
+.tiny-heart{color:var(--rose);padding:0 4px}
+.collection-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:14px 2px 13px;color:var(--muted);font:10px/1.4 Arial,sans-serif;letter-spacing:.17em;text-transform:uppercase;animation:rise .8s .16s both}
+.count{border:1px solid var(--line);border-radius:30px;padding:7px 11px;letter-spacing:.1em;white-space:nowrap}
+.list{display:grid;gap:10px;animation:rise .9s .22s both}
+.entry{display:grid;grid-template-columns:42px minmax(0,1fr) 34px;align-items:center;gap:15px;min-height:83px;padding:15px 19px;color:inherit;text-decoration:none;background:var(--card);border:1px solid var(--line);box-shadow:0 3px 12px rgba(91,62,57,.025);transition:transform .22s,box-shadow .22s,border-color .22s,background .22s;-webkit-tap-highlight-color:transparent}
+.entry:hover,.entry:focus-visible{transform:translateY(-2px);background:#fffdfa;border-color:rgba(183,126,131,.42);box-shadow:0 14px 38px rgba(91,62,57,.065);outline:none}
+.number{display:grid;place-items:center;width:37px;height:37px;border:1px solid #ead6d2;border-radius:50%;color:#a77c7b;font:11px/1 Arial,sans-serif}
+.entry-title{display:block;color:#604b48;font-size:19px;line-height:1.35}
+.entry-note{display:block;margin-top:4px;color:#a18c86;font:10px/1.5 Arial,sans-serif;letter-spacing:.09em;text-transform:uppercase}
+.arrow{display:grid;place-items:center;width:31px;height:31px;border:1px solid var(--line);border-radius:50%;color:var(--rose);font:17px/1 Georgia,serif;transition:transform .22s,background .22s}
+.entry:hover .arrow,.entry:focus-visible .arrow{transform:translateX(2px);background:#f8eeeb}
+.closing{padding:30px 0 0;text-align:center;color:var(--rose);font-size:21px;letter-spacing:.14em;animation:rise .9s .32s both}
+footer{padding-top:15px;text-align:center;color:#a18b86;font:9px/1.7 Arial,sans-serif;letter-spacing:.17em;text-transform:uppercase}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:520px){.shell{width:min(100% - 24px,790px);padding-top:43px}header{padding:25px 0 27px}.entry{grid-template-columns:36px minmax(0,1fr) 29px;gap:11px;padding:13px 12px;min-height:78px}.number{width:34px;height:34px}.entry-title{font-size:17px}.entry-note{font-size:9px}.arrow{width:28px;height:28px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<main class="shell">
+  <div class="eyebrow">a collection made for you</div>
+  <header>
+    <h1>A Little Place for You</h1>
+    <p class="intro">A few words, a few memories, and little pieces of my heart. All gathered here, so you can find them whenever you want <span class="tiny-heart">♡</span></p>
+  </header>
+  <div class="collection-head"><span>Your little collection</span><span class="count">07 pages</span></div>
+  <nav class="list" aria-label="Your messages">
+    <a class="entry" href="https://bmw-in.github.io/the-paragraph" target="_blank" rel="noopener noreferrer"><span class="number">01</span><span><span class="entry-title">The Paragraph</span><span class="entry-note">A few words that mean a lot</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+    <a class="entry" href="https://bmw-in.github.io/to-make-feel-good" target="_blank" rel="noopener noreferrer"><span class="number">02</span><span><span class="entry-title">To Make You Feel Good</span><span class="entry-note">For the days you need a little comfort</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+    <a class="entry" href="https://bmw-in.github.io/secret-u-web" target="_blank" rel="noopener noreferrer"><span class="number">03</span><span><span class="entry-title">A Secret for You</span><span class="entry-note">Something tucked away just for you</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+    <a class="entry" href="https://bmw-in.github.io/i-really-love-you" target="_blank" rel="noopener noreferrer"><span class="number">04</span><span><span class="entry-title">I Really Love You</span><span class="entry-note">In all the little ways</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+    <a class="entry" href="https://bmw-in.github.io/one-month-together" target="_blank" rel="noopener noreferrer"><span class="number">05</span><span><span class="entry-title">One Month Together</span><span class="entry-note">The beginning of our little story</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+    <a class="entry" href="https://bmw-in.github.io/rasmalai-ka-birthday" target="_blank" rel="noopener noreferrer"><span class="number">06</span><span><span class="entry-title">Rasmalai Ka Birthday</span><span class="entry-note">A birthday page for my favourite girl</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+    <a class="entry" href="https://bmw-in.github.io/for-anusha" target="_blank" rel="noopener noreferrer"><span class="number">07</span><span><span class="entry-title">For Anusha</span><span class="entry-note">A little page with a lot of love</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+  </nav>
+  <div class="closing" aria-hidden="true">♡</div>
+  <footer>made with love · all in one little place</footer>
+</main>
+</body>
+</html>
